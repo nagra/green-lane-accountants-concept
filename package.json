@@ -1,0 +1,16 @@
+{
+  "name": "green-lane-accountants-concept",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Unofficial website redesign concept for Green Lane Accountants, Leicester. Preview only.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "preview": "node scripts/serve.mjs",
+    "start": "npm run build && npm run check && npm run preview"
+  },
+  "engines": {
+    "node": ">=20.12"
+  }
+}

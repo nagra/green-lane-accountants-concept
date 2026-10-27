@@ -1,0 +1,136 @@
+<!--
+{
+  "title": "Contact Us | Green Lane Accountants, Leicester",
+  "description": "Contact Green Lane Accountants at 79 Green Lane Road, Leicester LE5 3TP. Call 0116 220 0438 or email help@greenlaneaccountants.co.uk.",
+  "nav": "contact"
+}
+-->
+<div class="page-header">
+  <div class="container">
+    <p class="eyebrow">Contact us</p>
+    <h1>Contact <em>the practice.</em></h1>
+    <p class="lede">Call, email or visit the practice on Green Lane Road, Leicester. Tell us a little about your business or tax affairs and we will talk through how we can help.</p>
+  </div>
+</div>
+
+<section class="section section--tight-top" aria-label="Contact details and enquiry form">
+  <div class="container contact-layout">
+    <div class="contact-details">
+      <h2>Contact details</h2>
+      <dl class="detail-rows">
+        <div>
+          <dt>Telephone</dt>
+          <dd><a class="big-link" href="{{phoneHref}}">{{phone}}</a></dd>
+        </div>
+        <div>
+          <dt>Email</dt>
+          <dd><a class="email" href="mailto:{{email}}">{{email}}</a></dd>
+        </div>
+        <div>
+          <dt>Address</dt>
+          <dd>
+            <address>Green Lane Accountants<br>{{streetAddress}}<br>{{locality}}<br>{{postcode}}</address>
+          </dd>
+        </div>
+      </dl>
+      <div class="directions">
+        <p>For directions, open the address in Google Maps. No map is embedded on this page.</p>
+        <a class="button button--outline" href="{{mapUrl}}" rel="noopener noreferrer">Get directions{{svg:external}}<span class="visually-hidden"> in Google Maps (external site)</span></a>
+      </div>
+    </div>
+
+    <div class="enquiry" id="enquiry">
+      <h2>Send an enquiry</h2>
+
+      <div class="demo-notice" role="note" aria-labelledby="demo-notice-title">
+        <h3 id="demo-notice-title">This is a demonstration form</h3>
+        <p>This page is part of an unofficial design preview. The form below <strong>does not send, store or email</strong> anything you enter. To contact Green Lane Accountants, please call <a href="{{phoneHref}}">{{phone}}</a> or email <a class="email" href="mailto:{{email}}">{{email}}</a>.</p>
+      </div>
+
+      <div class="error-summary" data-error-summary tabindex="-1" aria-labelledby="error-summary-title" hidden>
+        <h3 id="error-summary-title">There is a problem</h3>
+        <ul></ul>
+      </div>
+
+      <noscript>
+        <p class="demo-notice">The demonstration form needs JavaScript to show its demonstration message. It never sends anything either way.</p>
+      </noscript>
+
+      <form class="form" data-demo-form method="dialog" novalidate aria-labelledby="enquiry-form-title">
+        <h3 id="enquiry-form-title" class="visually-hidden">Enquiry form (demonstration)</h3>
+
+        <div class="field">
+          <label for="name">Your name</label>
+          <p class="error-message" id="name-error" hidden></p>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+
+        <div class="field">
+          <label for="email">Email address</label>
+          <p class="error-message" id="email-error" hidden></p>
+          <input id="email" name="email" type="email" autocomplete="email" spellcheck="false" required>
+        </div>
+
+        <div class="field">
+          <label for="phone">Telephone <span class="optional">(optional)</span></label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel">
+        </div>
+
+        <div class="field">
+          <label for="topic">What would you like to discuss? <span class="optional">(optional)</span></label>
+          <select id="topic" name="topic">
+            <option value="">Choose a topic</option>
+            <option value="accountancy">Accountancy</option>
+            <option value="business-accounts">Business accounts</option>
+            <option value="taxation">Taxation</option>
+            <option value="bookkeeping">Bookkeeping</option>
+            <option value="payroll">Payroll</option>
+            <option value="vat">VAT</option>
+            <option value="company-secretarial">Company secretarial</option>
+            <option value="other">Something else</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <fieldset>
+            <legend>Who is the enquiry for? <span class="optional">(optional)</span></legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="enquirer" value="business"> A business</label>
+              <label class="choice"><input type="radio" name="enquirer" value="practice"> A professional practice</label>
+              <label class="choice"><input type="radio" name="enquirer" value="individual"> Myself, as an individual</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="field">
+          <fieldset>
+            <legend>How would you prefer us to reply? <span class="optional">(optional)</span></legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="reply" value="email"> By email</label>
+              <label class="choice"><input type="radio" name="reply" value="phone"> By telephone</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="field">
+          <label for="message">How can we help?</label>
+          <p class="hint" id="message-hint">A few sentences is plenty. Please don’t include bank details, tax reference numbers or other sensitive information.</p>
+          <p class="error-message" id="message-error" hidden></p>
+          <textarea id="message" name="message" rows="6" required aria-describedby="message-hint" data-hint="message-hint"></textarea>
+        </div>
+
+        <div class="form__submit">
+          <button class="button" type="submit">Send enquiry</button>
+          <p>Demonstration only: nothing will be sent.</p>
+        </div>
+      </form>
+
+      <div class="demo-result on-dark" data-demo-result hidden>
+        <h3 tabindex="-1">Demonstration only: your enquiry has not been sent</h3>
+        <p>Thank you for trying the enquiry form. Because this is a design preview, nothing you entered has been sent, stored or emailed, and the form has been cleared.</p>
+        <p>On the finished website, this message would confirm that the practice has received your enquiry. To contact Green Lane Accountants now, call <a href="{{phoneHref}}">{{phone}}</a> or email <a class="email" href="mailto:{{email}}">{{email}}</a>.</p>
+        <button class="button button--light" type="button" data-demo-reset>Try the form again</button>
+      </div>
+    </div>
+  </div>
+</section>

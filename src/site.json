@@ -1,0 +1,13 @@
+{
+  "preview": true,
+  "name": "Green Lane Accountants",
+  "productionUrl": "https://www.greenlaneaccountants.co.uk",
+  "phone": "0116 220 0438",
+  "phoneHref": "tel:+441162200438",
+  "email": "help@greenlaneaccountants.co.uk",
+  "streetAddress": "79 Green Lane Road",
+  "locality": "Leicester",
+  "region": "Leicestershire",
+  "postcode": "LE5 3TP",
+  "mapUrl": "https://www.google.com/maps/search/?api=1&query=79%20Green%20Lane%20Road%2C%20Leicester%20LE5%203TP"
+}
